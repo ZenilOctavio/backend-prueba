@@ -24,8 +24,17 @@ public class EjemploController {
     
     @GetMapping("/")
     public ResponseEntity<Resource> cargarArchivoHtml() throws IOException {
-        File file = new File(System.getProperty("user.dir")+"/src/main/resources/static/index.html");
-        System.out.println(file.getAbsolutePath());
+        return getResource("index.html");
+    }
+    
+    @GetMapping("/about")
+    public ResponseEntity<Resource> about() throws IOException{
+        return getResource("/about/index.html");
+    }
+
+    public ResponseEntity<Resource> getResource(String path) throws IOException{
+            File file = new File(System.getProperty("user.dir")+"/src/main/resources/static/"+path);
+        // System.out.println(file.getAbsolutePath());
         InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Disposition", "inline; filename=" + file.getName());
@@ -34,11 +43,7 @@ public class EjemploController {
                 .contentLength(file.length())
                 .contentType(MediaType.parseMediaType("text/html"))
                 .body(resource);
-    }
-    
-    @GetMapping("/about")
-    public String about(){
-        return "about";
+
     }
     
 }

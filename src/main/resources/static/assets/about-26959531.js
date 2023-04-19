@@ -1,0 +1,1 @@
+import{_ as e,c as n,t as s,o as _,f as c}from"./_plugin-vue_export-helper-c3118770.js";const a={data(){return{count:0}}};function r(p,t,i,f,o,l){return _(),n("button",{onClick:t[0]||(t[0]=b=>o.count++)},"Count is: "+s(o.count),1)}const u=e(a,[["render",r],["__scopeId","data-v-baaf8e64"]]);c(u).mount("#about");

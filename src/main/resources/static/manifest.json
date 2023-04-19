@@ -1,0 +1,35 @@
+{
+  "__plugin-vue_export-helper-c3118770.js": {
+    "file": "assets/_plugin-vue_export-helper-c3118770.js"
+  },
+  "about/index.css": {
+    "file": "assets/index-067f347a.css",
+    "src": "about/index.css"
+  },
+  "about/index.html": {
+    "css": [
+      "assets/index-067f347a.css"
+    ],
+    "file": "assets/about-26959531.js",
+    "imports": [
+      "__plugin-vue_export-helper-c3118770.js"
+    ],
+    "isEntry": true,
+    "src": "about/index.html"
+  },
+  "index.css": {
+    "file": "assets/index-0e09f825.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "css": [
+      "assets/index-0e09f825.css"
+    ],
+    "file": "assets/main-3284aeb7.js",
+    "imports": [
+      "__plugin-vue_export-helper-c3118770.js"
+    ],
+    "isEntry": true,
+    "src": "index.html"
+  }
+}
